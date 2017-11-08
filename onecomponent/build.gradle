@@ -1,0 +1,37 @@
+apply plugin: 'com.dd.comgradle'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //解决资源命名冲突
+    resourcePrefix "one_"
+}
+
+dependencies {
+    compile project(':componentservice')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+combuild {
+    applicationName = 'com.mrzhang.reader.runalone.application.ReaderApplication'
+    isRegisterCompoAuto = false
+}
