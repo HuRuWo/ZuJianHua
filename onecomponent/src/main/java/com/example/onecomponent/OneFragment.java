@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mrzhang.component.componentlib.router.ui.UIRouter;
 
 
 /**
@@ -28,7 +29,7 @@ public class OneFragment extends Fragment {
 
                 @Override
                 public void onClick(View v) {
-                    //UIRouter.getInstance().openUri(getActivity(), "componentdemo://share", null);
+                    UIRouter.getInstance().openUri(getActivity(), "component://two", null);
                 }
             });
 

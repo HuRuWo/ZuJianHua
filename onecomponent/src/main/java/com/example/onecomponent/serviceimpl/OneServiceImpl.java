@@ -9,7 +9,7 @@ import com.mrzhang.componentservice.readerbook.OneService;
  * Created by mrzhang on 2017/6/15.
  */
 
-public class ReadBookServiceImpl implements OneService {
+public class OneServiceImpl implements OneService {
     @Override
     public Fragment getOneFragment() {
         return new OneFragment();

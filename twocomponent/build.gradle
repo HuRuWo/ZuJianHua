@@ -1,11 +1,11 @@
 apply plugin: 'com.dd.comgradle'
-
 android {
     compileSdkVersion 26
 
 
+
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -21,8 +21,6 @@ android {
         }
     }
 
-    //解决资源命名冲突
-    resourcePrefix "two_"
 }
 
 dependencies {
@@ -31,6 +29,6 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.mrzhang.reader.runalone.application.ReaderApplication'
-    isRegisterCompoAuto = false
+    applicationName = 'com.mrzhang.share.runalone.application.TwoApplication'
+    isRegisterCompoAuto = true
 }

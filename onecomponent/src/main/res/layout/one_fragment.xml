@@ -8,7 +8,7 @@
         android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="one组件--->点击加载 two组件"
+        android:text="one组件fragment"
         android:textSize="21sp"
         android:layout_centerInParent="true" />
 
