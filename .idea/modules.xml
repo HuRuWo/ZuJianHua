@@ -3,13 +3,21 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZuJianHua.iml" filepath="$PROJECT_DIR$/ZuJianHua.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\ZuJianHua.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\ZuJianHua.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\app\app.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basiclib/basiclib.iml" filepath="$PROJECT_DIR$/basiclib/basiclib.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\basiclib\basiclib.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\basiclib\basiclib.iml" />
       <module fileurl="file://$PROJECT_DIR$/basicres/basicres.iml" filepath="$PROJECT_DIR$/basicres/basicres.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\basicres\basicres.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\basicres\basicres.iml" />
       <module fileurl="file://$PROJECT_DIR$/build-gradle/build-gradle.iml" filepath="$PROJECT_DIR$/build-gradle/build-gradle.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\build-gradle\build-gradle.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\build-gradle\build-gradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/componentlib/componentlib.iml" filepath="$PROJECT_DIR$/componentlib/componentlib.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\componentlib\componentlib.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\componentlib\componentlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/componentservice/componentservice.iml" filepath="$PROJECT_DIR$/componentservice/componentservice.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\componentservice\componentservice.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\componentservice\componentservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/onecomponent/onecomponent.iml" filepath="$PROJECT_DIR$/onecomponent/onecomponent.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\Quick\ZuJianHua\onecomponent\onecomponent.iml" filepath="C:\Users\Administrator\Desktop\Quick\ZuJianHua\onecomponent\onecomponent.iml" />
     </modules>
   </component>
 </project>
