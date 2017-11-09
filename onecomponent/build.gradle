@@ -5,7 +5,7 @@ android {
 
 
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -22,7 +22,7 @@ android {
     }
 
     //解决资源命名冲突
-    resourcePrefix "two_"
+    resourcePrefix "one_"
 }
 
 dependencies {
@@ -31,6 +31,7 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.mrzhang.reader.runalone.application.ReaderApplication'
+    applicationName = 'com.mrzhang.reader.runalone.application.OneApplication'
     isRegisterCompoAuto = false
 }
+

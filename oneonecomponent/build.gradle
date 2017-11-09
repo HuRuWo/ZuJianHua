@@ -1,8 +1,8 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.dd.comgradle'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+
 
     defaultConfig {
         minSdkVersion 16
@@ -13,16 +13,25 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //解决资源命名冲突
+    resourcePrefix "oneone_"
 }
 
 dependencies {
-    compile project(':componentlib')
-    compile project(':basicres')
+    compile project(':componentservice')
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+combuild {
+    applicationName = 'com.mrzhang.share.runalone.application.OneOneApplication'
+    isRegisterCompoAuto = false
+}
+

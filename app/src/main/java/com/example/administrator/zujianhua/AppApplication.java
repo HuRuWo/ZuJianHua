@@ -17,8 +17,7 @@ public class AppApplication extends Application {
         //如果isRegisterCompoAuto为false，则需要通过反射加载组件
         Router.registerComponent("com.example.onecomponent.applike.OneAppLike");
 
-        //Router.registerComponent("com.example.twocomponent.applike.TwoAppLike");
-
+        Router.registerComponent("com.example.oneonecomponent.applike.OneOneAppLike");
     }
 
 

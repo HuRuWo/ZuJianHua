@@ -1,4 +1,4 @@
-package com.example.onecomponent;
+package com.example.oneonecomponent;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,13 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.mrzhang.component.componentlib.router.ui.UIRouter;
 
 /**
  * Created by mrzhang on 2017/6/15.
  */
 
-public class OneFragment extends Fragment {
+public class OneOneFragment extends Fragment {
 
     private View rootView;
 
@@ -21,16 +22,8 @@ public class OneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         if (rootView == null) {
-            rootView = inflater.inflate(R.layout.one_fragment, container,
+            rootView = inflater.inflate(R.layout.activity_oneone, container,
                     false);
-            rootView.findViewById(R.id.tv_content).setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    UIRouter.getInstance().openUri(getActivity(), "component://oneone", null);
-                }
-            });
-
         }
         return rootView;
     }

@@ -1,1 +1,1 @@
-include ':app', ':componentservice', ':basicres', ':basiclib', ':componentlib', ':build-gradle', ':onecomponent', ':twocomponent'
+include ':app', ':componentservice', ':basicres', ':basiclib', ':componentlib', ':build-gradle', ':onecomponent', ':oneonecomponent'
