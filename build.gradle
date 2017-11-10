@@ -25,6 +25,9 @@ allprojects {
         maven {
             url uri('./repo')
         }
+        flatDir {
+            dirs '../componentrelease' //this way we can find the .aar file in  folder
+        }
     }
 }
 
