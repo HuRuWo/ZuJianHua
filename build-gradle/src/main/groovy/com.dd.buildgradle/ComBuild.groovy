@@ -157,7 +157,9 @@ public class ComBuild implements Plugin<Project> {
                     project.dependencies.add("compile", str + "-release@aar")
                     System.out.println("add dependencies : " + str + "-release@aar");
                 } else {
-                    throw new RuntimeException(str + " not found ! maybe you should generate a new one ")
+                    //throw new RuntimeException(str + " not found ! maybe you should generate a new one ")
+                    //否则从maven 仓库导入
+                    project.dependencies.add("compile", str+"@aar")
                 }
             } else {
                 project.dependencies.add("compile", project.project(':' + str))

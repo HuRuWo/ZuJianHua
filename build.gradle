@@ -1,17 +1,18 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
         jcenter()
         maven {
             url uri('./repo')
         }
+        maven { url "http://127.0.0.1:8081/nexus/content/repositories/zujianhua" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
-        classpath 'com.mrzhang.andcomponent:build-gradle:0.0.2'
+        classpath 'com.mrzhang.andcomponent:build-gradle:0.0.3'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -25,12 +26,18 @@ allprojects {
         maven {
             url uri('./repo')
         }
+
+
         flatDir {
             dirs '../componentrelease' //this way we can find the .aar file in  folder
+        }
+        maven { url "http://127.0.0.1:8081/nexus/content/repositories/zujianhua"
         }
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+task clean(type: Exec) {
+    ext.lockhunter = '\"D:\\ruanjian\\LockHunter.exe\"'
+    def buildDir = file(new File("build"))
+    commandLine 'cmd', "$lockhunter", '/delete', '/silent', buildDir
 }

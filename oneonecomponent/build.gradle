@@ -35,3 +35,4 @@ combuild {
     isRegisterCompoAuto = false
 }
 
+apply from: '../nexus_maven.gradle'
