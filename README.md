@@ -7,7 +7,9 @@
 具体博文已发布到简书
 
 1.[全面组件化---DDComponentForAndroid分析(1)](http://www.jianshu.com/p/5746e50ed572)
+
 2.[全面组件化---DDComponentForAndroid分析(2)](http://www.jianshu.com/p/df80bcfd6250)
+
 3.[全面组件化---DDComponentForAndroid分析(3)](http://www.jianshu.com/p/2d5dc793db65)
 
 # 可以直接导入项目使用，使用之前请阅读相关文章
