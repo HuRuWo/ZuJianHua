@@ -5,14 +5,21 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.Task
 
-public class ComBuild implements Plugin<Project> {
+/**
+ * 继承 Plugin<Project> 接口 ，插件从这里开始
+ */
+ class ComBuild implements Plugin<Project> {
 
     //默认是app，直接运行assembleRelease的时候，等同于运行app:assembleRelease
     String compilemodule = "app"
 
     void apply(Project project) {
+        /**
+         * 添加 一个extension 对应build.gradle下的combuild{}
+         */
         project.extensions.create('combuild', ComExtension)
 
+        /**获取taskname**/
         String taskNames = project.gradle.startParameter.taskNames.toString()
         System.out.println("taskNames is " + taskNames);
         String module = project.path.replace(":", "")
@@ -108,6 +115,11 @@ public class ComBuild implements Plugin<Project> {
         }
     }
 
+     /**
+      * 获取task的信息 装入AssembleTask类
+      * @param taskNames
+      * @return
+      */
     private AssembleTask getTaskInfo(List<String> taskNames) {
         AssembleTask assembleTask = new AssembleTask();
         for (String task : taskNames) {
@@ -147,15 +159,15 @@ public class ComBuild implements Plugin<Project> {
         String[] compileComponents = components.split(",")
         if (compileComponents == null || compileComponents.length == 0) {
             System.out.println("there is no add dependencies ");
-            return;
+            return
         }
         for (String str : compileComponents) {
-            System.out.println("comp is " + str);
+            System.out.println("comp is " + str)
             if (str.contains(":")) {
                 File file = project.file("../componentrelease/" + str.split(":")[1] + "-release.aar")
                 if (file.exists()) {
                     project.dependencies.add("compile", str + "-release@aar")
-                    System.out.println("add dependencies : " + str + "-release@aar");
+                    System.out.println("add dependencies : " + str + "-release@aar")
                 } else {
                     //throw new RuntimeException(str + " not found ! maybe you should generate a new one ")
                     //否则从maven 仓库导入
@@ -163,15 +175,18 @@ public class ComBuild implements Plugin<Project> {
                 }
             } else {
                 project.dependencies.add("compile", project.project(':' + str))
-                System.out.println("add dependencies project : " + str);
+                System.out.println("add dependencies project : " + str)
             }
         }
     }
 
+     /**
+      * 自定义Task的info类
+      */
     private class AssembleTask {
-        boolean isAssemble = false;
-        boolean isDebug = false;
-        List<String> modules = new ArrayList<>();
+        boolean isAssemble = false
+        boolean isDebug = false
+        List<String> modules = new ArrayList<>()
     }
 
 }

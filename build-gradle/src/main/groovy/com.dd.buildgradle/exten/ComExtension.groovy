@@ -1,6 +1,6 @@
 package com.dd.buildgradle.exten
 
-public class ComExtension {
+class ComExtension {
 
     /**
      * 是否自动注册组件，true则会使用字节码插入的方式自动注册代码

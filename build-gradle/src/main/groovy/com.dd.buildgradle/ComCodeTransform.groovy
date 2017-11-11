@@ -7,7 +7,7 @@ import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.io.FileUtils
 import org.gradle.api.Project
 
-public class ComCodeTransform extends Transform {
+ class ComCodeTransform extends Transform {
 
     private Project project
     ClassPool classPool
